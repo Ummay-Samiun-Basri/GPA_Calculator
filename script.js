@@ -60,13 +60,12 @@ function calc(){
         const gradeArray=[grade1, grade2, grade3, grade4, grade5];
         const gradeValueFromArray=[];
         for(var i=0; i<5; i++){
-            if(gradeArray[i] == "A+") {
+            if(gradeArray[i] == "A+" || gradeArray[i] == "A+"){
                 gradeValueFromArray[i] = 4.0;
             }
             else if(gradeArray[i] == "A"){
                 gradeValueFromArray[i] = 3.75;
             }
-            
             else if(gradeArray[i] == "A-"){
                 gradeValueFromArray[i] = 3.50;
             }
@@ -86,9 +85,8 @@ function calc(){
                 gradeValueFromArray[i] = 2.25;
             }
             else if(gradeArray[i] == "D"){
-                gradeValueFromArray[i] = 2.00;
+                gradeValueFromArray[i] = 2.0;
             }
-
             else if(gradeArray[i] == "F"){
                 gradeValueFromArray[i] = 0.0;
             }   
